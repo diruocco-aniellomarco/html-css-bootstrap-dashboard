@@ -33,6 +33,7 @@ main {
 .main_content {
     background-color: lightcoral;
     flex-grow: 1;
+    overflow: auto;
 }
 .nav_main{
     background-color: #051e34;
