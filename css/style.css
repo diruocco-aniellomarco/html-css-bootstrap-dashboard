@@ -23,8 +23,7 @@ body{
     order: -1;
 } */
 
-/* Header */
-header {background-color: blue;}
+
 /* Main */
 main {
     height: calc(100% - var(--altezza-header));
@@ -41,7 +40,7 @@ main {
     flex-grow: 1;
 }
 .nav_main{
-    background-color: lightgreen;
+    background-color: #051e34;
     
 }
 
