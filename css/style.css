@@ -1,4 +1,3 @@
-
 :root{
     --altezza-header: 80px;
 
@@ -6,46 +5,50 @@
     --larghezza-aside-sm:70px;
 }
 
-
-nav {
-    background-color: blue;
-    height: var(--altezza-header);
+body{
+    height: 100vh;
 }
 
+
+/* debug */
+.box {
+    width: 50px;
+    height: 50px;
+    border: 1px dashed black;
+} 
+
+
+/* in main_header box_sm_3 posso farlo anche con order:-1 in media query
+#box_sm_3 {
+    order: -1;
+} */
+
+/* Header */
+header {background-color: blue;}
+/* Main */
 main {
-    width: 100%;
+    height: calc(100% - var(--altezza-header));
+    background-color: aqua;
+    
+}
+.main_content,
+.nav_main {
     height: 100%;
-    background-color: red;
 }
 
-.mini_aside {
-    width: var(--larghezza-aside-sm);
-    }
-.desktop_aside {
-    width: var(--larghezza-aside);
+.main_content {
+    background-color: lightcoral;
+    flex-grow: 1;
 }
-.maxi_container {
-    width: calc(100% - var(--larghezza-aside-sm));
-    overflow: auto;    
+.nav_main{
+    background-color: lightgreen;
+    
 }
+
+/* main_header */
 
 .main_header {
     min-height: 50px;
     background-color: aqua;
     
 }
-
-.mini_aside,
-.desktop_aside {
-    height: calc(100vh - var(--altezza-header));
-    background-color: green; 
-}
-
-.box {
-    height: 50px;
-    border: 1px dashed black;
-}
-
-/* #box_sm_3 {
-    order: -1;
-} */
