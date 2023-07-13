@@ -22,7 +22,7 @@ body{
 /* Main */
 main {
     height: calc(100% - var(--altezza-header));
-    background-color: aqua;
+   
     
 }
 .main_content,
@@ -31,7 +31,7 @@ main {
 }
 
 .main_content {
-    background-color: lightcoral;
+   
     flex-grow: 1;
     overflow: auto;
 }
