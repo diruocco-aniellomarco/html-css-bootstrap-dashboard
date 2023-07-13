@@ -45,7 +45,11 @@ main {
     min-height: 50px;
     background-color: #1b72e8;    
 }
-
+/* CARDS */
+.table img {
+    width: 40px;
+    aspect-ratio: 1;
+}
 /* OFFCANVAS */
 .offcanvas.offcanvas-end {
     width: 800px;
