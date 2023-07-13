@@ -215,27 +215,64 @@
                   <div class="card-header">
                     <h2>F.A.Q.</h2>
                   </div>
-                <form action="">
-                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                    <option selected>Come aggiungere un nuovo studente</option>
-                    <option value="1">clicca sul + in alto</option>
-                  </select>
-                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                    <option selected>Come aggiungere un nuovo studente</option>
-                    <option value="1">clicca sul + in alto</option>
-                  </select>
-                  <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                    <option selected>Come aggiungere un nuovo studente</option>
-                    <option value="1">clicca sul + in alto</option>
-                  </select>
-                </form>
+
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Come aggiungere un nuovo studente
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quidem.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                          Come aggiungere un nuovo studente
+                        </button>
+                      </h2>
+                      <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quidem.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                          Come aggiungere un nuovo studente
+                        </button>
+                      </h2>
+                      <div id="collapse3" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, quidem.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
               </div>
             
 
           </div>
 
           <div class="col-lg-4">
-            <div class="box">box1</div>
+            <div class="card">
+              <div class="card-header">
+                <h2>ToDo</h2>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+              </ul>
+            </div>
             <div class="box">box2</div>
           </div>
         </div>
@@ -266,7 +303,10 @@
           </div>
           <div class="col-6 my-2">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email">
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroup-sizing-default">@</span>
+              <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>            
           </div>
           <div class="col-6 my-2">
             <label for="pass_email" class="form-label">Password</label>
@@ -274,7 +314,10 @@
           </div>
           <div class="col-6 my-2">
             <label for="email_andress" class="form-label">Indirizzo Email</label>
-            <input type="email" class="form-control" id="email_andress">
+            <div class="input-group">
+              <span class="input-group-text" id="inputGroup-sizing-default">@</span>
+              <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div> 
           </div>
           <div class="col-6 my-2">
             <label for="pass_email_2" class="form-label">Password</label>
