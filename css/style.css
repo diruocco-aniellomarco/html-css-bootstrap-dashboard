@@ -18,11 +18,6 @@ body{
 } 
 
 
-/* in main_header box_sm_3 posso farlo anche con order:-1 in media query
-#box_sm_3 {
-    order: -1;
-} */
-
 
 /* Main */
 main {
@@ -48,6 +43,12 @@ main {
 
 .main_header {
     min-height: 50px;
-    background-color: aqua;
+    background-color: aqua;    
+}
+
+@media screen and (min-width:768px) {
+   #box_sm_3 {
+    order: 1;
+   } 
     
 }
