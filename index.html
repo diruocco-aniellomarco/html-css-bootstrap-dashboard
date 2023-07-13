@@ -44,12 +44,25 @@
     <section class="main_content ">
 
       <!-- Main Header -->
-      <div class=" main_header">
+      <div class=" main_header text-white">
         <div class="container-fluid  py-3">
-          <div class="row justify-content-between flex-column flex-md-row">
-              <div id="box_sm_3" class="box"></div>
-              <div class="col-md-4 box">1</div>
-              <div class="col-md-4 box">2</div>
+          <div class="row justify-content-between align-center flex-column flex-md-row">
+              <div id="box_sm_3" class="col-md-4 text-md-end">
+                    <span>Nuovo Studente</span>
+                    <button 
+                      class="btn btn-link border-white text-white" 
+                      type="button" 
+                      data-bs-toggle="offcanvas" 
+                      data-bs-target="#offcanvas_boolean" 
+                      aria-controls="offcanvas_boolean">
+
+                        <i class="fa-solid fa-plus"></i>
+                        
+                    </button>
+              </div>
+
+              <div class="col-md-4 ">1</div>
+              <div class="col-md-4 ">2</div>
           </div>
         </div>
       </div>
@@ -71,11 +84,87 @@
       </div>
 
     </section>
-
-    
-
   </main>
 
+
+  <!-- offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas_boolean" aria-labelledby="offcanvas_booleanLabel">
+
+    <div class="offcanvas-header">
+      <h5>Inserisci un nuovo studente</h5>
+      <!-- bottone x in alto a destra -->
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="container-fluid">
+        <form action="" class="row">
+          <div class="col-6 my-2">
+            <label for="name" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="col-6 my-2">
+            <label for="cognome" class="form-label">Cognome</label>
+            <input type="text" class="form-control" id="cognome">
+          </div>
+          <div class="col-6 my-2">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="col-6 my-2">
+            <label for="pass_email" class="form-label">Password</label>
+            <input type="password" class="form-control" id="pass_email">
+          </div>
+          <div class="col-6 my-2">
+            <label for="email_andress" class="form-label">Indirizzo Email</label>
+            <input type="email" class="form-control" id="email_andress">
+          </div>
+          <div class="col-6 my-2">
+            <label for="pass_email_2" class="form-label">Password</label>
+            <input type="password" class="form-control" id="pass_email_2">
+          </div>
+          <div class="col-12 my-2">
+            <label for="andress" class="form-label">Indirizzo</label>
+            <input type="text" class="form-control" id="andress">
+          </div>
+          <div class="col-6 my-2">
+            <label for="city" class="form-label">Città</label>
+            <input type="text" class="form-control" id="city">
+          </div>
+          <div class="col-4 my-2">
+            <label for="city" class="form-label">Stato</label>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Scegli</option>
+              <option value="1">Italia</option>
+              <option value="2">Francia</option>
+              <option value="3">Germania</option>
+            </select>
+          </div>
+          <div class="col-2 my-2">
+            <label for="cap" class="form-label">CAP</label>
+            <input type="text" class="form-control" id="cap">
+          </div>
+          <div class="col-12 my-2">
+            <label for="select_foto" class="form-label">Foto</label>
+            <input class="form-control" type="file" id="select_foto">          
+          </div>
+          <div class="col-12 my-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Seleziona per proseguire
+              </label>
+            </div>
+            
+          </div>
+          <div class="col-12 my-2">
+            <button type="button" class="btn btn-primary">Salva</button>
+            <button type="button" class="btn btn-warning">Svuota</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
 
 

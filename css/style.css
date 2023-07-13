@@ -43,8 +43,15 @@ main {
 
 .main_header {
     min-height: 50px;
-    background-color: aqua;    
+    background-color: #1b72e8;    
 }
+
+/* OFFCANVAS */
+.offcanvas.offcanvas-end {
+    width: 800px;
+}
+
+
 
 @media screen and (min-width:768px) {
    #box_sm_3 {
