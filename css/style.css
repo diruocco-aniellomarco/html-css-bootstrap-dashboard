@@ -46,6 +46,12 @@ main {
     min-height: 50px;
     background-color: #1b72e8;    
 }
+
+.mh_access {
+    padding: 5px 10px;
+    background-color: #1558b5;
+    border-radius: 25px;
+}
 /* CARDS */
 th {
     font-weight: 100;

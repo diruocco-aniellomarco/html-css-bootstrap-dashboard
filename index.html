@@ -45,9 +45,9 @@
 
       <!-- Main Header -->
       <div class=" main_header text-white">
-        <div class="container-fluid  py-3">
-          <div class="row justify-content-between align-center flex-column flex-md-row">
-              <div id="box_sm_3" class="col-md-4 text-md-end">
+        <div class="container-fluid  py-4">
+          <div class="row justify-content-between flex-column flex-md-row g-3">
+              <div id="box_sm_3" class="col-md-4 col-lg-3 text-md-end">
                     <span>Nuovo Studente</span>
                     <button 
                       class="btn btn-link border-white text-white" 
@@ -61,8 +61,23 @@
                     </button>
               </div>
 
-              <div class="col-md-4 ">1</div>
-              <div class="col-md-4 ">2</div>
+              <div class="col-md-4 col-lg-6 ">
+                <div>
+                  <h2 class="d-lg-inline-block mb-3">Boolean</h2> <span class="mh_access">Piano blaze</span>
+                </div>
+                <div>
+                  <span class="mh_access">3app</span>
+                  <i class="fa-solid fa-angles-right my-3"></i>
+                  <span class="mh_access d-none d-lg-inline my-3">Boolean mobile app</span>
+                  <span class="mh_access d-none d-lg-inline my-3">Boolean web app</span>
+                  <span class="mh_access d-none d-lg-inline my-3">Boolean blog app</span>
+                  <span class="mh_access d-lg-none">+</span>
+                </div>
+              </div>
+              <div class="col-md-4 col-lg-3 ">
+                <h5>Studenti online negli ultimi 30 minuti</h5>
+                <p class="h2">125</p>
+              </div>
           </div>
         </div>
       </div>
@@ -273,8 +288,8 @@
               <ul class="list-group list-group-flush">
                 <li class="list-group-item">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="" id="check1" name="check1">
+                    <label class="form-check-label" for="check1">
                       Kickoff nuove classi
                     </label>
                   </div>
@@ -282,8 +297,8 @@
                 </li>
 
                 <li class="list-group-item"><div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault">
+                  <input class="form-check-input" type="checkbox" value="" id="check2" name="check2">
+                  <label class="form-check-label" for="check2">
                     Lezioni su Bootstrap 5 in classe #75
                   </label>
                 </div>
@@ -291,8 +306,8 @@
 
                 <li class="list-group-item">
                   <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input" type="checkbox" value="" id="check3" name="check3">
+                    <label class="form-check-label" for="check3">
                       Controllare username github studenti
                     </label>
                   </div>
