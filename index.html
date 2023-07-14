@@ -335,63 +335,63 @@
     </div>
     <div class="offcanvas-body">
       <div class="container-fluid">
-        <form action="" class="row">
-          <div class="col-6 my-2">
+        <form action="http://learning.tizianonicolai.com/request-catcher/" method="POST" class="row">
+          <div class="col-md-6 my-2">
             <label for="name" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="name">
+            <input type="text" class="form-control" id="name" name="name">
           </div>
-          <div class="col-6 my-2">
+          <div class="col-md-6 my-2">
             <label for="cognome" class="form-label">Cognome</label>
-            <input type="text" class="form-control" id="cognome">
+            <input type="text" class="form-control" id="cognome" name="cognome">
           </div>
-          <div class="col-6 my-2">
+          <div class="col-md-6 my-2">
             <label for="email" class="form-label">Email</label>
             <div class="input-group">
               <span class="input-group-text" id="inputGroup-sizing-default">@</span>
-              <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="email" name="email">
             </div>            
           </div>
-          <div class="col-6 my-2">
+          <div class="col-md-6 my-2">
             <label for="pass_email" class="form-label">Password</label>
-            <input type="password" class="form-control" id="pass_email">
+            <input type="password" class="form-control" id="pass_email" name="pass_email">
           </div>
-          <div class="col-6 my-2">
+          <div class="col-md-6 my-2">
             <label for="email_andress" class="form-label">Indirizzo Email</label>
             <div class="input-group">
               <span class="input-group-text" id="inputGroup-sizing-default">@</span>
-              <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="email_andress" name="email_andress">
             </div> 
           </div>
-          <div class="col-6 my-2">
+          <div class="col-md-6 my-2">
             <label for="pass_email_2" class="form-label">Password</label>
-            <input type="password" class="form-control" id="pass_email_2">
+            <input type="password" class="form-control" id="pass_email_2" name="pass_email_2">
           </div>
           <div class="col-12 my-2">
             <label for="andress" class="form-label">Indirizzo</label>
-            <input type="text" class="form-control" id="andress">
+            <input type="text" class="form-control" id="andress" name="andress">
           </div>
-          <div class="col-6 my-2">
+          <div class="col-md-6 my-2">
             <label for="city" class="form-label">Città</label>
-            <input type="text" class="form-control" id="city">
+            <input type="text" class="form-control" id="city" name="city">
           </div>
-          <div class="col-4 my-2">
-            <label for="city" class="form-label">Stato</label>
-            <select class="form-select" aria-label="Default select example">
+          <div class="col-md-4 my-2">
+            <label for="state" class="form-label">Stato</label>
+            <select class="form-select" aria-label="Default select example" id="state" name="state">
               <option selected>Scegli</option>
-              <option value="1">Italia</option>
-              <option value="2">Francia</option>
-              <option value="3">Germania</option>
+              <option value="Italia">Italia</option>
+              <option value="Francia">Francia</option>
+              <option value="Germania">Germania</option>
             </select>
           </div>
-          <div class="col-2 my-2">
+          <div class="col-md-2 my-2">
             <label for="cap" class="form-label">CAP</label>
-            <input type="text" class="form-control" id="cap">
+            <input type="text" class="form-control" id="cap" name="cap">
           </div>
           <div class="col-12 my-2">
             <label for="select_foto" class="form-label">Foto</label>
-            <input class="form-control" type="file" id="select_foto">          
+            <input class="form-control" type="file" id="select_foto" name="select_foto">          
           </div>
-          <div class="col-12 my-2">
+          <div class="col my-2">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
               <label class="form-check-label" for="flexCheckDefault">
@@ -401,8 +401,8 @@
             
           </div>
           <div class="col-12 my-2">
-            <button type="button" class="btn btn-primary">Salva</button>
-            <button type="button" class="btn btn-warning">Svuota</button>
+            <button type="submit" class="btn btn-primary">Salva</button>
+            <button type="reset" class="btn btn-warning">Svuota</button>
 
           </div>
         </form>
