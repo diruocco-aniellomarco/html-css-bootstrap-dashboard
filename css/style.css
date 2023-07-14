@@ -47,6 +47,23 @@ main {
     background-color: #1b72e8;    
 }
 /* CARDS */
+th {
+    font-weight: 100;
+}
+.width_table {
+    width: 55%;
+}
+tr :not(tr th:first-child) {
+    text-align: center;    
+}
+
+tr th:nth-child(2),
+tr th:nth-child(3),
+tr td:nth-child(2),
+tr td:nth-child(3) {
+    display: none;
+}
+
 .table img {
     width: 40px;
     aspect-ratio: 1;
@@ -62,12 +79,20 @@ main {
    #box_sm_3 {
     order: 1;
    } 
-    
+
+    tr th:nth-child(2),
+    tr th:nth-child(3),
+    tr td:nth-child(2),
+    tr td:nth-child(3) {
+       display: table-cell;
+   }
 }
 
 @media screen and (min-width:992px) {
    .icon_nav {
     min-width: 100px;
    } 
-    
+    .width_table {
+    width: 45%;
+}
 }
