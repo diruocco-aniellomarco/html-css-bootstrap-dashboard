@@ -64,3 +64,10 @@ main {
    } 
     
 }
+
+@media screen and (min-width:992px) {
+   .icon_nav {
+    min-width: 100px;
+   } 
+    
+}
