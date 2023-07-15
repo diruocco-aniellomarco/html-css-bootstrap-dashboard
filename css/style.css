@@ -17,7 +17,34 @@ body{
     border: 1px dashed black;
 } 
 
+/* header */
+.navbar .form-control {
+    background-color: #e5e5e5;
+    border-left: 0;
+}
 
+.navbar .input-group-text {
+    background-color: #e5e5e5;
+    border-right: 0;
+}
+
+.question_mark {
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: #5b5858;
+    color: white;    
+}
+.navbar-brand {
+    max-width: 150px;
+}
+
+.nav_h_icons {
+    max-width: 150px;
+    -ms-flex-align: end;
+}
+.navbar .input-group {
+    
+}
 
 /* Main */
 main {
@@ -36,8 +63,7 @@ main {
     overflow: auto;
 }
 .nav_main{
-    background-color: #051e34;
-    
+    background-color: #051e34;    
 }
 
 /* main_header */
@@ -82,7 +108,8 @@ tr td:nth-child(3) {
 
 
 @media screen and (min-width:768px) {
-   #box_sm_3 {
+    
+    #box_sm_3 {
     order: 1;
    } 
 
@@ -95,8 +122,10 @@ tr td:nth-child(3) {
 }
 
 @media screen and (min-width:992px) {
+   
+    
    .icon_nav {
-    min-width: 100px;
+    min-width: 110px;
    } 
     .width_table {
     width: 45%;

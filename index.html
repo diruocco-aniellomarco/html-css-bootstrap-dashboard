@@ -16,12 +16,31 @@
 
    <header>
     <nav class="navbar ">        
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./img/mobile-logo.png"
-                alt="logo-small" width="50" >
+        <div class="container-fluid ">
+          <div class="row flex-nowrap justify-content-between">
+
+            <a class="navbar-brand" href="#">
+              <img class="d-lg-none" src="./img/mobile-logo.png"
+                  alt="logo-small" width="50" >
+              <img class="d-none d-lg-inline-block" src="./img/logo.svg"
+              alt="logo">
             </a>
-                
+
+            <div class=" input-group">
+                <span class="input-group-text" id="inputGroup-sizing-default">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="email" name="email" placeholder="Prova a cercare: Lezione di Laravel">
+            </div>
+
+            <div class=" nav_h_icons d-flex align-items-center gap-3">
+              <i class="fa-solid fa-list"></i>
+              <span class="question_mark">?</span>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+              <i class="fa-solid fa-bell"></i>
+            </div>
+
+          </div>      
         </div>
       </nav>
    </header>
