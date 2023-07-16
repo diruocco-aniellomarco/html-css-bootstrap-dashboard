@@ -14,36 +14,53 @@
 </head>
 <body>
 
-   <header>
-    <nav class="navbar ">        
-        <div class="container-fluid ">
-          <div class="row flex-nowrap justify-content-between">
 
-            <a class="navbar-brand" href="#">
-              <img class="d-lg-none" src="./img/mobile-logo.png"
-                  alt="logo-small" width="50" >
-              <img class="d-none d-lg-inline-block" src="./img/logo.svg"
-              alt="logo">
-            </a>
+  <header>
+    <nav class="nav_header container-fluid d-flex gap-3 align-items-center h-100">
+      <div>
+        <a class="navbar-brand" href="#">
+            <img class="d-lg-none" src="./img/mobile-logo.png"
+                alt="logo-small" width="50" >
+            <img class="d-none d-lg-inline-block" src="./img/logo.svg"
+            alt="logo">
+          </a>
+      </div>
 
-            <div class=" input-group">
-                <span class="input-group-text" id="inputGroup-sizing-default">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </span>
-                <input type="email" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="email" name="email" placeholder="Prova a cercare: Lezione di Laravel">
+      <div class=" input-group">
+          <span class="input-group-text" id="inputGroup-sizing-default">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input type="search" class="form-control" 
+                  aria-label="Sizing example input" 
+                  aria-describedby="inputGroup-sizing-default" 
+                  id="search_header" name="search_header" 
+                  placeholder="Prova a cercare: Lezione di Laravel">
+      </div>
+
+      <div class=" nav_h_icons d-flex align-items-center gap-3">
+          <div class="d-none d-lg-flex align-items-center gap-3">
+            <i class="fa-solid fa-list"></i>
+            <div class="question_mark d-flex align-items-center justify-content-center">
+              <span>?</span>
             </div>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="dropdown">
+            <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bel_icon_navheader fa-solid fa-bell"></i>
+            </button>
+            <ul class="dropdown-menu" style="">
+              <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </div>
+            
+          </div>
 
-            <div class=" nav_h_icons d-flex align-items-center gap-3">
-              <i class="fa-solid fa-list"></i>
-              <span class="question_mark">?</span>
-              <i class="fa-solid fa-ellipsis-vertical"></i>
-              <i class="fa-solid fa-bell"></i>
-            </div>
+    </nav>
+  </header>
 
-          </div>      
-        </div>
-      </nav>
-   </header>
    
   <main class="d-flex">
 

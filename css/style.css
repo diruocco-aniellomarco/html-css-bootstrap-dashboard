@@ -1,5 +1,5 @@
 :root{
-    --altezza-header: 80px;
+    --altezza-header: 70px;
 
     --larghezza-aside:200px;
     --larghezza-aside-sm:70px;
@@ -18,12 +18,17 @@ body{
 } 
 
 /* header */
-.navbar .form-control {
+header {
+    height: var(--altezza-header);
+}
+
+
+#search_header  {
     background-color: #e5e5e5;
     border-left: 0;
 }
 
-.navbar .input-group-text {
+#inputGroup-sizing-default {
     background-color: #e5e5e5;
     border-right: 0;
 }
@@ -32,10 +37,12 @@ body{
     padding: 5px 10px;
     border-radius: 50%;
     background-color: #5b5858;
-    color: white;    
+    color: white;  
+    aspect-ratio: 1;
+    width: 34px;  
 }
-.navbar-brand {
-    max-width: 150px;
+.bel_icon_navheader {
+    color: #ff8f00;
 }
 
 .nav_h_icons {
