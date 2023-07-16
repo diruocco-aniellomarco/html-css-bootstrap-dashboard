@@ -49,9 +49,7 @@ header {
     max-width: 150px;
     -ms-flex-align: end;
 }
-.navbar .input-group {
-    
-}
+
 
 /* Main */
 main {
@@ -64,15 +62,19 @@ main {
     height: 100%;
 }
 
-.main_content {
-   
+.main_content {   
     flex-grow: 1;
     overflow: auto;
 }
 .nav_main{
     background-color: #051e34;    
 }
-
+/* aside */
+.icon_nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;    
+}
 /* main_header */
 
 .main_header {
@@ -112,6 +114,11 @@ tr td:nth-child(3) {
     width: 800px;
 }
 
+/* OVER */
+
+.icon_nav:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
 
 
 @media screen and (min-width:768px) {
@@ -130,10 +137,6 @@ tr td:nth-child(3) {
 
 @media screen and (min-width:992px) {
    
-    
-   .icon_nav {
-    min-width: 110px;
-   } 
     .width_table {
     width: 45%;
 }
